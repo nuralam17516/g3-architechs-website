@@ -66,7 +66,90 @@ nav li a {
 .banner-description {
     color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
+}
+
+
+
+main {
+    max-width: 1440px;
+    margin: 70px 0px 130px 130px;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 40px;
+}
+
+.teams-description {
+    color: #727272;
+    font-weight: 400;
+}
+
+.quick-list {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+
+    nav, .teams-container {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        margin: 0px;
+    }
+    .teams-container{
+        padding: 20px;
+    }
+  
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 50px;
+    }
 }
