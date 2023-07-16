@@ -5,6 +5,17 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.primary-btn {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+}
+
 header {
     background-color: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -36,4 +47,26 @@ nav li {
 
 nav li a {
     text-decoration: none;
+}
+
+/* Banner styles */
+.banner-container {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
 }
