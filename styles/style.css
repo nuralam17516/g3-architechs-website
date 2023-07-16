@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Work+Sans:wght@400;600;700;800&display=swap');
 
-* {
+* { 
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
@@ -118,12 +120,67 @@ main {
     font-weight: 700;
 }
 
+/* features styles */
+.features-container {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.features-title {
+    padding-left: 20px;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+}
+
+.features-img img {
+    height: 90%;
+    margin-left: 90px;
+
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background-color: #FF900E;
+    text-align: center;
+    width: 342px;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h3 {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0;
+}
 
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
 
-    nav, .teams-container {
+    nav,
+    .teams-container,
+    .features-container {
         flex-direction: column;
     }
 
@@ -138,18 +195,43 @@ main {
     main {
         margin: 0px;
     }
-    .teams-container{
+
+    .teams-container {
         padding: 20px;
     }
-  
+
+    .features-img img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge {
+        /* width: 100%; */
+        padding: 0px;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    nav {
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 
     header {
         padding: 50px;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 2fr;
+    }
+
+    main {
+        margin: 0px;
+    }
+
+    .teams-container {
+        padding: 20px;
     }
 }
